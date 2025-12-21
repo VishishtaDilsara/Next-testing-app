@@ -1,7 +1,6 @@
 .link {
-  color: blue;
+  color: purple;
 }
-
 .link:hover {
   color: green;
 }

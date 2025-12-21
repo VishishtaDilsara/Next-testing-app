@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./contact.module.css";
 
 function page() {
   const meatItems = [
@@ -28,7 +29,10 @@ function page() {
         {meatItems.map((item) => {
           return (
             <li>
-              <Link href={`/products/meat/${item.meatName}`}>
+              <Link
+                href={`/products/meat/${item.meatName}`}
+                className={styles.link}
+              >
                 {item.meatName}
               </Link>
             </li>
